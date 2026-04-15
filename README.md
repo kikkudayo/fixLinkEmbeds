@@ -27,3 +27,8 @@ The plugin also handles:
 - URLs with `www.` prefix
 - Preservation of URL paths and query parameters
 - Safe error handling for malformed URLs
+
+## Installation
+
+Install this as a Vencord custom plugin by following the official guide:
+https://docs.vencord.dev/installing/custom-plugins/
