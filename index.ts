@@ -9,7 +9,7 @@ const DOMAIN_REPLACEMENTS: Record<string, string> = {
     "instagram.com": "kkinstagram.com",
     "reddit.com": "rxddit.com",
     "pixiv.com": "phixiv.com",
-    "furaffinity.com": "fxfuraffinity.com",
+    "furaffinity.net": "fxfuraffinity.net",
     "twitch.tv": "fxtwitch.seria.moe",
     "tumblr.com": "tpmblr.com",
     "deviantart.com": "fixdeviantart.com",
