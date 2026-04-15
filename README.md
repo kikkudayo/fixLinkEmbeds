@@ -6,18 +6,18 @@ A Vencord plugin that automatically fixes embeds from links by replacing them wi
 
 The plugin automatically converts links from these platforms:
 
-- **X/Twitter**: `x.com` → `fixupx.com`, `twitter.com` → `fxtwitter.com`
-- **Bluesky**: `bsky.app` → `fxbsky.app`
-- **TikTok**: `tiktok.com` → `tnktok.com`
-- **Instagram**: `instagram.com` → `kkinstagram.com`
-- **Reddit**: `reddit.com` → `rxddit.com`
-- **Pixiv**: `pixiv.com` → `phixiv.com`
-- **Fur Affinity**: `furaffinity.com` → `fxfuraffinity.com`
-- **Twitch**: `twitch.tv` → `fxtwitch.seria.moe`
-- **Tumblr**: `tumblr.com` → `tpmblr.com`
-- **DeviantArt**: `deviantart.com` → `fixdeviantart.com`
-- **Threads**: `threads.net` → `vxthreads.net`
-- **Spotify**: `spotify.com` → `fxspotify.com`
+- **X/Twitter**: `x.com` → `fixupx.com`, `twitter.com` → `fxtwitter.com` ([FxEmbed](https://github.com/FxEmbed/FxEmbed))
+- **Bluesky**: `bsky.app` → `fxbsky.app` ([FxEmbed](https://github.com/FxEmbed/FxEmbed))
+- **TikTok**: `tiktok.com` → `tnktok.com` ([fxTikTok](https://github.com/okdargy/fxTikTok))
+- **Instagram**: `instagram.com` → `kkinstagram.com` ([KKinstagram](https://github.com/kkscript/kk))
+- **Reddit**: `reddit.com` → `rxddit.com` ([FixReddit](https://github.com/MinnDevelopment/fxreddit))
+- **Pixiv**: `pixiv.com` → `phixiv.com` ([Phixiv](https://github.com/HazelTheWitch/phixiv))
+- **Fur Affinity**: `furaffinity.net` → `fxfuraffinity.net` ([fxraffinity](https://fxraffinity.net/))
+- **Twitch**: `twitch.tv` → `fxtwitch.seria.moe` ([fxtwitch](https://github.com/seriaati/fxtwitch))
+- **Tumblr**: `tumblr.com` → `tpmblr.com` ([fxtumblr](https://tpmblr.com/))
+- **DeviantArt**: `deviantart.com` → `fixdeviantart.com` ([fixDeviantArt](https://github.com/Tschrock/fixdeviantart))
+- **Threads**: `threads.net` → `vxthreads.net` ([vxThreads](https://github.com/everettsouthwick/vxthreads))
+- **Spotify**: `spotify.com` → `fxspotify.com` ([fxspotify](https://github.com/lumyar/fxspotify))
 
 ## How It Works
 
