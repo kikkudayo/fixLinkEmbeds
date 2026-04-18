@@ -11,13 +11,14 @@ The plugin automatically converts links from these platforms:
 - **TikTok**: `tiktok.com` → `tnktok.com` ([fxTikTok](https://github.com/okdargy/fxTikTok))
 - **Instagram**: `instagram.com` → `kkinstagram.com` ([KKinstagram](https://github.com/kkscript/kk))
 - **Reddit**: `reddit.com` → `rxddit.com` ([FixReddit](https://github.com/MinnDevelopment/fxreddit))
-- **Pixiv**: `pixiv.com` → `phixiv.com` ([Phixiv](https://github.com/HazelTheWitch/phixiv))
+- **Pixiv**: `pixiv.net` → `phixiv.net` ([Phixiv](https://github.com/HazelTheWitch/phixiv))
 - **Fur Affinity**: `furaffinity.net` → `fxfuraffinity.net` ([fxraffinity](https://fxraffinity.net/))
-- **Twitch**: `twitch.tv` → `fxtwitch.seria.moe` ([fxtwitch](https://github.com/seriaati/fxtwitch))
+- **Twitch**: `twitch.tv`, `twitch.com` → `fxtwitch.seria.moe` ([fxtwitch](https://github.com/seriaati/fxtwitch))
 - **Tumblr**: `tumblr.com` → `tpmblr.com` ([fxtumblr](https://tpmblr.com/))
 - **DeviantArt**: `deviantart.com` → `fixdeviantart.com` ([fixDeviantArt](https://github.com/Tschrock/fixdeviantart))
-- **Threads**: `threads.net` → `vxthreads.net` ([vxThreads](https://github.com/everettsouthwick/vxthreads))
+- **Threads**: `threads.net`, `threads.com` → `vxthreads.net` ([vxThreads](https://github.com/everettsouthwick/vxthreads))
 - **Spotify**: `spotify.com` → `fxspotify.com` ([fxspotify](https://github.com/lumyar/fxspotify))
+- **Facebook**: `facebook.com` → `facebed.com` ([facebed](https://github.com/facebed/facebed))
 
 ## How It Works
 
