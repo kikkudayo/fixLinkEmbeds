@@ -8,20 +8,25 @@ const DOMAIN_REPLACEMENTS: Record<string, string> = {
     "tiktok.com": "tnktok.com",
     "instagram.com": "kkinstagram.com",
     "reddit.com": "rxddit.com",
-    "pixiv.com": "phixiv.com",
+    "pixiv.net": "phixiv.net",
     "furaffinity.net": "fxfuraffinity.net",
     "twitch.tv": "fxtwitch.seria.moe",
+    "twitch.com": "fxtwitch.seria.moe",
     "tumblr.com": "tpmblr.com",
     "deviantart.com": "fixdeviantart.com",
     "threads.net": "vxthreads.net",
+    "threads.com": "vxthreads.net",
     "spotify.com": "fxspotify.com",
+    "facebook.com": "facebed.com"
 };
 
-function getBaseDomain(hostname: string): string {
-    const parts = hostname.split(".");
-    if (parts.length <= 2) return hostname;
-    return parts.slice(-2).join(".");
+
+
+function matchDomain(host: string): string | null {
+    return Object.keys(DOMAIN_REPLACEMENTS)
+        .find(d => host === d || host.endsWith("." + d)) ?? null;
 }
+
 
 export default definePlugin({
     name: "FixLinkEmbeds",
@@ -30,15 +35,13 @@ export default definePlugin({
 
     fixUrl(urlString: string): string {
         try {
-            // ensure valid URL
             const url = new URL(urlString);
-            const baseDomain = getBaseDomain(url.hostname);
-
-            const replacement = DOMAIN_REPLACEMENTS[baseDomain];
-            if (!replacement) return urlString;
-
-            url.hostname = replacement;
+            const domain = matchDomain(url.hostname);
+            if (!domain) return urlString;
+            
+            url.hostname = DOMAIN_REPLACEMENTS[domain];
             return url.toString();
+
         } catch {
             return urlString;
         }
@@ -48,15 +51,13 @@ export default definePlugin({
         if (!msg?.content) return;
 
         msg.content = msg.content.replace(
-            /https?:\/\/\S+/g,
+        /https?:\/\/[^\s<>()]+/g,
             (match) => this.fixUrl(match)
         );
     },
 
     onBeforeMessageSend(_, msg) {
         this.cleanMessage(msg);
-        // debug:
-        // console.log("Modified message:", msg.content);
     },
 
     onBeforeMessageEdit(_cid, _mid, msg) {
