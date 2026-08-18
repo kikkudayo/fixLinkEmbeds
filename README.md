@@ -24,10 +24,13 @@ The plugin automatically converts links from these platforms:
 
 When you send a message containing a link to one of the supported platforms, the plugin automatically replaces the domain with its embed-fixing alternative before the message is sent to Discord. This works for both new messages and message edits.
 
-The plugin also handles:
-- URLs with `www.` prefix
-- Preservation of URL paths and query parameters
-- Safe error handling for malformed URLs
+### Custom Providers
+
+You can customize the replacement URL for each supported platform through the plugin settings. Configure it to a different provider to your liking. Leave a custom provider field empty to restore the default provider.
+
+### Canceling a Link Transformation
+
+You can prevent the plugin from transforming an individual link by adding a backslash (`\`) immediately before the link. The link will be sent without replacing it. The backslash is removed before the message is sent, so the original link is sent. This lets you bypass the automatic transformation for individual links without disabling the plugin or changing its settings.
 
 ## Installation
 
