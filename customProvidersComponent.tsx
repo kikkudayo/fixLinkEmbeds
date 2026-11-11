@@ -1,4 +1,5 @@
-import { Button, Forms, TextInput, useState } from "@webpack/common";
+import { TextInput, useState } from "@webpack/common";
+import { Button } from "@components/Button";
 import { PluginSettingComponentProps } from "@utils/types";
 import { settings } from "./index";
 
